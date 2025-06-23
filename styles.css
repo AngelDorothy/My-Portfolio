@@ -1007,9 +1007,6 @@ nav ul li a.active {
 }
 
 @media (max-width: 479px) {
-    body {
-        background-color: red;
-    }
 
     #hero h2,
     .hero-business-title,
