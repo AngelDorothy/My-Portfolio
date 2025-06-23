@@ -75,24 +75,6 @@ function initAnimations() {
     }, 500);
 }
 
-// ===== VISION SECTION TOGGLE =====
-function toggleVision() {
-    const visionSection = document.querySelector('.vision-section');
-    const readMoreBtn = document.querySelector('.read-more-btn');
-    
-    if (visionSection && readMoreBtn) {
-        visionSection.classList.toggle('expanded');
-        
-        if (visionSection.classList.contains('expanded')) {
-            readMoreBtn.textContent = 'Read Less';
-            readMoreBtn.style.backgroundColor = '#dc3545';
-        } else {
-            readMoreBtn.textContent = 'Read More';
-            readMoreBtn.style.backgroundColor = '#007bff';
-        }
-    }
-}
-
 // ===== CONTACT FORM HANDLING =====
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
@@ -652,6 +634,5 @@ window.addEventListener('load', function() {
 });
 
 // Export functions for global access
-window.toggleVision = toggleVision;
 window.closeProjectModal = closeProjectModal;
 window.viewProjectDetails = viewProjectDetails;
