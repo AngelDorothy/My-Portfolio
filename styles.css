@@ -1152,18 +1152,11 @@ nav ul li a.active {
 /* ===== Responsive Styles ===== */
 
 /* Pasty...........Extra Large Desktop Screens (1600px) */
-@media (min-width: 1600px) {
-
-    body {
-        background-color: pink;
-    }
-}
+@media (min-width: 1600px) {}
 
 /*My laptop size THE ACTUAL LAPTOP SIZE (MACBOOK PRO)Desktops/Monitors...........Large Desktop Screens (1200px and 1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) {
-    body {
-        background-color: blue;
-    }
+
 
     #hero {
         padding: 3em 1.2em;
@@ -1195,9 +1188,7 @@ nav ul li a.active {
 /* (IPAD)Tablets/Laptops...........Medium Desktop to Tablets (768px to 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
 
-    body {
-        background-color: green;
-    }
+
 
     header {
         display: flex;
@@ -1272,9 +1263,7 @@ nav ul li a.active {
 /* NORMAL Phones BIGGER THAN THE ACTUAL PHONE SIZE/Tablets...............Tablets and Smaller Screens (480px to 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
 
-    body {
-        background-color: yellow;
-    }
+
 
     .top-bar {
         display: flex;
@@ -1400,9 +1389,6 @@ nav ul li a.active {
 
 /*(IPHONE 12PRO THE NORMAL PHONE SIZE TAKE NOTE)Small Mobiles........... Small Mobile Devices (Below 480px) */
 @media (max-width: 479px) {
-    body {
-        background-color: red;
-    }
 
     #hero h2,
     .hero-business-title,
