@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initAnimations();
     initContactForm();
-    initPortfolioInteractions();
     initResponsiveNavigation();
     initScrollEffects();
     
@@ -298,107 +297,6 @@ function showFormSuccess() {
     }, 5000);
 }
 
-// ===== PORTFOLIO INTERACTIONS =====
-function initPortfolioInteractions() {
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-    
-    portfolioItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px)';
-            this.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.2)';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = '';
-        });
-        
-        // Add click functionality for portfolio items
-        item.addEventListener('click', function() {
-            const projectName = this.querySelector('strong').textContent;
-            const projectDesc = this.querySelector('.project-desc').textContent;
-            
-            showProjectModal(projectName, projectDesc);
-        });
-    });
-}
-
-function showProjectModal(projectName, projectDesc) {
-    // Create modal
-    const modal = document.createElement('div');
-    modal.className = 'project-modal';
-    modal.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    `;
-    
-    modal.innerHTML = `
-        <div class="modal-content" style="
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            max-width: 500px;
-            width: 90%;
-            text-align: center;
-            transform: scale(0.7);
-            transition: transform 0.3s ease;
-        ">
-            <h3 style="color: #007bff; margin-bottom: 15px;">${projectName}</h3>
-            <p style="margin-bottom: 20px;">${projectDesc}</p>
-            <p style="color: #666; font-size: 0.9em; margin-bottom: 20px;">
-                This project showcases my skills in web development and design.
-                Click below to learn more about the technologies used and features implemented.
-            </p>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <button class="btn" onclick="closeProjectModal()">Close</button>
-                <button class="btn" style="background: #28a745;" onclick="viewProjectDetails('${projectName}')">View Details</button>
-            </div>
-        </div>
-    `;
-    
-    document.body.appendChild(modal);
-    
-    // Animate modal in
-    setTimeout(() => {
-        modal.style.opacity = '1';
-        modal.querySelector('.modal-content').style.transform = 'scale(1)';
-    }, 10);
-    
-    // Close modal on background click
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeProjectModal();
-        }
-    });
-}
-
-function closeProjectModal() {
-    const modal = document.querySelector('.project-modal');
-    if (modal) {
-        modal.style.opacity = '0';
-        modal.querySelector('.modal-content').style.transform = 'scale(0.7)';
-        setTimeout(() => {
-            modal.remove();
-        }, 300);
-    }
-}
-
-function viewProjectDetails(projectName) {
-    // This function can be expanded to show more detailed project information
-    alert(`Detailed information for ${projectName} would be displayed here.\n\nThis could include:\n- Technologies used\n- Project timeline\n- Challenges faced\n- Live demo link\n- GitHub repository`);
-    closeProjectModal();
-}
-
 // ===== RESPONSIVE NAVIGATION =====
 function initResponsiveNavigation() {
     // Add mobile menu toggle functionality
@@ -632,7 +530,3 @@ window.addEventListener('load', function() {
         setTimeout(() => loader.remove(), 500);
     }, 1000);
 });
-
-// Export functions for global access
-window.closeProjectModal = closeProjectModal;
-window.viewProjectDetails = viewProjectDetails;

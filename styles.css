@@ -1148,10 +1148,10 @@ nav ul li a.active {
 
 /* ===== Responsive Styles ===== */
 
-/* Pasty...........Extra Large Desktop Screens (1600px) */
+/* Extra Large Desktop Screens (1600px) */
 @media (min-width: 1600px) {}
 
-/*My laptop size THE ACTUAL LAPTOP SIZE (MACBOOK PRO)Desktops/Monitors...........Large Desktop Screens (1200px and 1599px) */
+/*Desktops/Monitors...........Large Desktop Screens (1200px and 1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) {
 
 
@@ -1182,7 +1182,7 @@ nav ul li a.active {
     }
 }
 
-/* (IPAD)Tablets/Laptops...........Medium Desktop to Tablets (768px to 1199px) */
+/*Tablets/Laptops...........Medium Desktop to Tablets (768px to 1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
 
 
@@ -1257,7 +1257,7 @@ nav ul li a.active {
     }
 }
 
-/* NORMAL Phones BIGGER THAN THE ACTUAL PHONE SIZE/Tablets...............Tablets and Smaller Screens (480px to 767px) */
+/*Tablets...............Tablets and Smaller Screens (480px to 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
 
 
@@ -1384,7 +1384,7 @@ nav ul li a.active {
     }
 }
 
-/*(IPHONE 12PRO THE NORMAL PHONE SIZE TAKE NOTE)Small Mobiles........... Small Mobile Devices (Below 480px) */
+/*Small Mobiles........... Small Mobile Devices (Below 480px) */
 @media (max-width: 479px) {
 
     #hero h2,
