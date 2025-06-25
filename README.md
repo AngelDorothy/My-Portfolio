@@ -1,29 +1,23 @@
-# My Portfolio Website 🌐
+# 🌟 AngelDorothy’s Developer Portfolio
 
-This is a personal developer portfolio website built with HTML, CSS, and JavaScript.
+A responsive and modern personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## 🔗 Live Demo
+🌐 [View Live on Netlify](https://angeldorothy-portfolio.netlify.app/)
 
-Check it out here: [Live Site on Netlify](https://angeldorothy-portfolio.netlify.app/)
-
-## 💻 Tech Stack
-
+## 🧰 Tech Stack
 - HTML5
 - CSS3
-- JavaScript (vanilla)
+- JavaScript (Vanilla)
 
-## 📁 Project Sections
+## 📂 Features
+- Smooth scrolling and responsive layoutb
+- Sectioned content:
+  - Hero
+  - About
+  - Services
+  - Projects
+  - Contact Form
+- Organized codebase for easy readability and updates
 
-- Hero
-- About
-- Services
-- Projects
-- Contact
 
-## 🛠 How to Contribute or Review
-
-This project is open for viewing only. Feel free to check the code or view the deployed site.
-
-## 🚀 Author
-
-- GitHub: [AngelDorothy](https://github.com/AngelDorothy)
