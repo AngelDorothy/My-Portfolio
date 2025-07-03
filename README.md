@@ -17,7 +17,7 @@ A responsive and modern personal portfolio website built with HTML, CSS, and Jav
   - About
   - Services
   - Projects
-  - Contact Form
+  - Contact 
 - Organized codebase for easy readability and updates
 
 
